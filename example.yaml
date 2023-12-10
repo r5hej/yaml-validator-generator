@@ -1,0 +1,8 @@
+enabled: true
+enums_checker: 'enum_uno'
+services:
+  brokers: '6'
+  consumer: 'olla_suffix'
+  fisker: 12
+  nested_broker:
+    super_nested: -10

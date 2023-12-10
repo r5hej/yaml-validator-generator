@@ -1,0 +1,36 @@
+enabled:
+  description: 'field for testing bool'
+  required: true
+  type: bool
+
+enums_checker:
+  description: 'field for testing enums'
+  required: true
+  enum:
+    - enum_uno
+    - enum_dos
+
+services:
+  required: true
+  nested_broker:
+    required: false
+    super_nested:
+      required: true
+      type: number
+      min: 0
+  brokers:
+    description: 'field for testing regex'
+    required: false
+    type: string
+    regex: '\d'
+  consumer:
+    description: 'field for testing string prefixes'
+    required: true
+    type: string
+    prefix: 'olla'
+  fisker:
+    required: false
+    description: 'field for testing numbers'
+    type: number
+    min: 0
+    max: 128
